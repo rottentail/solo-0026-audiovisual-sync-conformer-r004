@@ -1,0 +1,543 @@
+{
+  "schema_version": 1,
+  "captured_by": "syncversiongate/1",
+  "takes": [
+    {
+      "take_id": "calibration-125",
+      "semantic": {
+        "admission_status": 201,
+        "analysis_status": 201,
+        "take": {
+          "state": "admitted",
+          "name": "calibration pair, audio 125 ms late",
+          "note": "syncversiongate corpus",
+          "audio": {
+            "sample_rate": 48000,
+            "channels": 1,
+            "bit_depth": 16,
+            "frame_count": 48000,
+            "duration_ms": 1000,
+            "peak_dbfs": -8.76,
+            "rms_dbfs": -23.2
+          },
+          "video": {
+            "width": 96,
+            "height": 54,
+            "fps_num": 24,
+            "fps_den": 1,
+            "frame_count": 24,
+            "duration_ms": 1000,
+            "chroma": "C420jpeg"
+          }
+        },
+        "analysis": {
+          "state": "ready",
+          "error_code": "",
+          "audio_event_ms": 500,
+          "video_event_ms": 375,
+          "offset_ms": 125,
+          "drift_ppm": 250,
+          "min_confidence": 0.55,
+          "max_offset_ms": 1000
+        },
+        "conform": {
+          "exists": true,
+          "state": "completed",
+          "error_code": "",
+          "request_status": 201,
+          "request_error_code": "",
+          "max_correction_ms": 250,
+          "measured_offset_ms": 125,
+          "applied_offset_ms": 125,
+          "applied_samples": 6000,
+          "bundle_available": true,
+          "audio_samples_sha256": "88be29c849a694bb3a470f29ea6b0982543338a1c289f278f4bca05e15159b50",
+          "video_frames_sha256": "ec880fa69da4fdb5c9a62a21f7c27c96a0affbe021fc93a042534499b1803092",
+          "receipt": {
+            "schema_version": 1,
+            "conform_id": "conform-calibration-125",
+            "analysis_id": "analysis-calibration-125",
+            "take_id": "calibration-125",
+            "measured_offset_ms": 125,
+            "applied_offset_ms": 125,
+            "applied_samples": 6000
+          }
+        }
+      },
+      "advisory": {
+        "confidence": 1,
+        "audio_prominence": 1,
+        "video_prominence": 1
+      },
+      "byte_level": {
+        "take_digest": "5b2706a36848a67cedced0c9430f10743fc4eae44fa7e72d0ba3e8253ae7a3bb",
+        "audio_digest": "ead6533b79022779c3bb06ef4495385528f4c6d71da518978088766ff0ac69fb",
+        "audio_bytes": 96044,
+        "video_digest": "89213f14b073ba833a38f160b3d9a993fbe608ff6e2b406ffd4fa8e0a4d3eb97",
+        "video_bytes": 186809,
+        "audio_output_digest": "20d8ef9386b0284abf5113f53ad46fd7a335b6ef1e5c3b01f45af7f21d044e86",
+        "video_output_digest": "89213f14b073ba833a38f160b3d9a993fbe608ff6e2b406ffd4fa8e0a4d3eb97",
+        "bundle_digest": "c34cb85f2701647517a67441fe921d5b7c6cfaaa85d5756f5685f8d69d971176",
+        "bundle_bytes": 283860,
+        "receipt_audio_digest": "20d8ef9386b0284abf5113f53ad46fd7a335b6ef1e5c3b01f45af7f21d044e86",
+        "receipt_video_digest": "89213f14b073ba833a38f160b3d9a993fbe608ff6e2b406ffd4fa8e0a4d3eb97",
+        "receipt_input_take_digest": "5b2706a36848a67cedced0c9430f10743fc4eae44fa7e72d0ba3e8253ae7a3bb"
+      },
+      "bundle": "golden/bundles/conform-calibration-125.zip"
+    },
+    {
+      "take_id": "negative-drift",
+      "semantic": {
+        "admission_status": 201,
+        "analysis_status": 201,
+        "take": {
+          "state": "admitted",
+          "name": "audio 80 ms early",
+          "note": "syncversiongate corpus",
+          "audio": {
+            "sample_rate": 48000,
+            "channels": 1,
+            "bit_depth": 16,
+            "frame_count": 48000,
+            "duration_ms": 1000,
+            "peak_dbfs": -8.76,
+            "rms_dbfs": -23.2
+          },
+          "video": {
+            "width": 96,
+            "height": 54,
+            "fps_num": 24,
+            "fps_den": 1,
+            "frame_count": 24,
+            "duration_ms": 1000,
+            "chroma": "C420jpeg"
+          }
+        },
+        "analysis": {
+          "state": "ready",
+          "error_code": "",
+          "audio_event_ms": 420,
+          "video_event_ms": 500,
+          "offset_ms": -80,
+          "drift_ppm": -160,
+          "min_confidence": 0.55,
+          "max_offset_ms": 1000
+        },
+        "conform": {
+          "exists": true,
+          "state": "completed",
+          "error_code": "",
+          "request_status": 201,
+          "request_error_code": "",
+          "max_correction_ms": 250,
+          "measured_offset_ms": -80,
+          "applied_offset_ms": -80,
+          "applied_samples": -3840,
+          "bundle_available": true,
+          "audio_samples_sha256": "7916d399d86caf0bc5299c581662cddf8ef205ec5c69069249cadeb1619b94cd",
+          "video_frames_sha256": "92f8ad81c6f759fc1fd754a5e0118b41a3ad2aba21a8a92e6ebc13118d31cca1",
+          "receipt": {
+            "schema_version": 1,
+            "conform_id": "conform-negative-drift",
+            "analysis_id": "analysis-negative-drift",
+            "take_id": "negative-drift",
+            "measured_offset_ms": -80,
+            "applied_offset_ms": -80,
+            "applied_samples": -3840
+          }
+        }
+      },
+      "advisory": {
+        "confidence": 1,
+        "audio_prominence": 1,
+        "video_prominence": 1
+      },
+      "byte_level": {
+        "take_digest": "e388e3fc0e873a94172ad5686c74f87200fddae17f5a7de3d6beafef07c10146",
+        "audio_digest": "0fe3064f2e0e8ce61d25e5a521aa5f6012600d985975446077b349004bc4eb79",
+        "audio_bytes": 96044,
+        "video_digest": "547a27380c962b3797ff922a1b8ef9c35c2ef5cdbf21100f1a277e961660b74d",
+        "video_bytes": 186809,
+        "audio_output_digest": "ead6533b79022779c3bb06ef4495385528f4c6d71da518978088766ff0ac69fb",
+        "video_output_digest": "547a27380c962b3797ff922a1b8ef9c35c2ef5cdbf21100f1a277e961660b74d",
+        "bundle_digest": "95e615d7ae311208dc5281fdcccf7afb25741b914abb5beb920ffb57e3d26f89",
+        "bundle_bytes": 283858,
+        "receipt_audio_digest": "ead6533b79022779c3bb06ef4495385528f4c6d71da518978088766ff0ac69fb",
+        "receipt_video_digest": "547a27380c962b3797ff922a1b8ef9c35c2ef5cdbf21100f1a277e961660b74d",
+        "receipt_input_take_digest": "e388e3fc0e873a94172ad5686c74f87200fddae17f5a7de3d6beafef07c10146"
+      },
+      "bundle": "golden/bundles/conform-negative-drift.zip"
+    },
+    {
+      "take_id": "stereo-44k1",
+      "semantic": {
+        "admission_status": 201,
+        "analysis_status": 201,
+        "take": {
+          "state": "admitted",
+          "name": "stereo 44.1 kHz, audio 117 ms late",
+          "note": "syncversiongate corpus",
+          "audio": {
+            "sample_rate": 44100,
+            "channels": 2,
+            "bit_depth": 16,
+            "frame_count": 66150,
+            "duration_ms": 1500,
+            "peak_dbfs": -8.76,
+            "rms_dbfs": -24.96
+          },
+          "video": {
+            "width": 96,
+            "height": 54,
+            "fps_num": 24,
+            "fps_den": 1,
+            "frame_count": 24,
+            "duration_ms": 1000,
+            "chroma": "C420jpeg"
+          }
+        },
+        "analysis": {
+          "state": "ready",
+          "error_code": "",
+          "audio_event_ms": 783,
+          "video_event_ms": 666,
+          "offset_ms": 117,
+          "drift_ppm": 149,
+          "min_confidence": 0.55,
+          "max_offset_ms": 1000
+        },
+        "conform": {
+          "exists": true,
+          "state": "completed",
+          "error_code": "",
+          "request_status": 201,
+          "request_error_code": "",
+          "max_correction_ms": 250,
+          "measured_offset_ms": 117,
+          "applied_offset_ms": 117,
+          "applied_samples": 5160,
+          "bundle_available": true,
+          "audio_samples_sha256": "b4d92188517189c1276319e72eef0a6042811fbba005cdf599b882c89b80d221",
+          "video_frames_sha256": "8935512bb71cf8791ff0261d131a5a7e307f1567e32d3a4f76e877662cb4529a",
+          "receipt": {
+            "schema_version": 1,
+            "conform_id": "conform-stereo-44k1",
+            "analysis_id": "analysis-stereo-44k1",
+            "take_id": "stereo-44k1",
+            "measured_offset_ms": 117,
+            "applied_offset_ms": 117,
+            "applied_samples": 5160
+          }
+        }
+      },
+      "advisory": {
+        "confidence": 1,
+        "audio_prominence": 1,
+        "video_prominence": 1
+      },
+      "byte_level": {
+        "take_digest": "c5f1fc5ae243e34fd2199f836f69df698a9fa1413d098c0cbe6b6a5fdf346bee",
+        "audio_digest": "b67b620c1d2cd3b51b91b64378f68114da337d9735ff4dc4179f8ee95a329e82",
+        "audio_bytes": 264644,
+        "video_digest": "40eb9b2093025a575b996e47101ded35e4bc57dc94c2499db605e8d3c57832e0",
+        "video_bytes": 186809,
+        "audio_output_digest": "0d7e5cb80a118a5fc9c888a24e2192dbf757989a03be83668597846faeb82938",
+        "video_output_digest": "40eb9b2093025a575b996e47101ded35e4bc57dc94c2499db605e8d3c57832e0",
+        "bundle_digest": "29c8ae25df292eb6aa0b9ad37507ee4984161fed682043621c6e839eb438e345",
+        "bundle_bytes": 452448,
+        "receipt_audio_digest": "0d7e5cb80a118a5fc9c888a24e2192dbf757989a03be83668597846faeb82938",
+        "receipt_video_digest": "40eb9b2093025a575b996e47101ded35e4bc57dc94c2499db605e8d3c57832e0",
+        "receipt_input_take_digest": "c5f1fc5ae243e34fd2199f836f69df698a9fa1413d098c0cbe6b6a5fdf346bee"
+      },
+      "bundle": "golden/bundles/conform-stereo-44k1.zip"
+    },
+    {
+      "take_id": "ramp-flash",
+      "semantic": {
+        "admission_status": 201,
+        "analysis_status": 201,
+        "take": {
+          "state": "admitted",
+          "name": "two-frame luma ramp, audio 75 ms late",
+          "note": "syncversiongate corpus",
+          "audio": {
+            "sample_rate": 48000,
+            "channels": 1,
+            "bit_depth": 16,
+            "frame_count": 48000,
+            "duration_ms": 1000,
+            "peak_dbfs": -8.76,
+            "rms_dbfs": -23.2
+          },
+          "video": {
+            "width": 96,
+            "height": 54,
+            "fps_num": 24,
+            "fps_den": 1,
+            "frame_count": 24,
+            "duration_ms": 1000,
+            "chroma": "C420jpeg"
+          }
+        },
+        "analysis": {
+          "state": "ready",
+          "error_code": "",
+          "audio_event_ms": 450,
+          "video_event_ms": 375,
+          "offset_ms": 75,
+          "drift_ppm": 167,
+          "min_confidence": 0.55,
+          "max_offset_ms": 1000
+        },
+        "conform": {
+          "exists": true,
+          "state": "completed",
+          "error_code": "",
+          "request_status": 201,
+          "request_error_code": "",
+          "max_correction_ms": 250,
+          "measured_offset_ms": 75,
+          "applied_offset_ms": 75,
+          "applied_samples": 3600,
+          "bundle_available": true,
+          "audio_samples_sha256": "f2d59a1e600a17a0f15e38877a9a2e8c39d39bf2b1409a8863f3f18e051f3cfb",
+          "video_frames_sha256": "156fdf7ed60b5417c5c07899d972b5748e4067f021f3cf3cec7e338f599138a1",
+          "receipt": {
+            "schema_version": 1,
+            "conform_id": "conform-ramp-flash",
+            "analysis_id": "analysis-ramp-flash",
+            "take_id": "ramp-flash",
+            "measured_offset_ms": 75,
+            "applied_offset_ms": 75,
+            "applied_samples": 3600
+          }
+        }
+      },
+      "advisory": {
+        "confidence": 1,
+        "audio_prominence": 1,
+        "video_prominence": 1
+      },
+      "byte_level": {
+        "take_digest": "607a783b983786a1eb12258cff78686e61cae451d948969a2224dfab4f91bd15",
+        "audio_digest": "f922d241bdbf6a17d1b290adbb128703fb653db31ddca8c0410e006e19a9db7d",
+        "audio_bytes": 96044,
+        "video_digest": "a33592c380f5169321e792474b480056ff4fd3e0bdaf04155ddf688db3a9e24a",
+        "video_bytes": 186809,
+        "audio_output_digest": "42ac59380a6a96f792e3ea260b0bd883dbfd7f8cdb845d52e182d87d3cc88ca8",
+        "video_output_digest": "a33592c380f5169321e792474b480056ff4fd3e0bdaf04155ddf688db3a9e24a",
+        "bundle_digest": "dc8d7b078c29ae20e0768a550422587e0f7d210b6b84d7eada61cf04dbaaec64",
+        "bundle_bytes": 283843,
+        "receipt_audio_digest": "42ac59380a6a96f792e3ea260b0bd883dbfd7f8cdb845d52e182d87d3cc88ca8",
+        "receipt_video_digest": "a33592c380f5169321e792474b480056ff4fd3e0bdaf04155ddf688db3a9e24a",
+        "receipt_input_take_digest": "607a783b983786a1eb12258cff78686e61cae451d948969a2224dfab4f91bd15"
+      },
+      "bundle": "golden/bundles/conform-ramp-flash.zip"
+    },
+    {
+      "take_id": "weak-flash",
+      "semantic": {
+        "admission_status": 201,
+        "analysis_status": 201,
+        "take": {
+          "state": "admitted",
+          "name": "low contrast flash, audio 125 ms late",
+          "note": "syncversiongate corpus",
+          "audio": {
+            "sample_rate": 48000,
+            "channels": 1,
+            "bit_depth": 16,
+            "frame_count": 48000,
+            "duration_ms": 1000,
+            "peak_dbfs": -8.76,
+            "rms_dbfs": -23.2
+          },
+          "video": {
+            "width": 96,
+            "height": 54,
+            "fps_num": 24,
+            "fps_den": 1,
+            "frame_count": 24,
+            "duration_ms": 1000,
+            "chroma": "C420jpeg"
+          }
+        },
+        "analysis": {
+          "state": "ready",
+          "error_code": "",
+          "audio_event_ms": 500,
+          "video_event_ms": 375,
+          "offset_ms": 125,
+          "drift_ppm": 250,
+          "min_confidence": 0.55,
+          "max_offset_ms": 1000
+        },
+        "conform": {
+          "exists": true,
+          "state": "completed",
+          "error_code": "",
+          "request_status": 201,
+          "request_error_code": "",
+          "max_correction_ms": 250,
+          "measured_offset_ms": 125,
+          "applied_offset_ms": 125,
+          "applied_samples": 6000,
+          "bundle_available": true,
+          "audio_samples_sha256": "88be29c849a694bb3a470f29ea6b0982543338a1c289f278f4bca05e15159b50",
+          "video_frames_sha256": "afa1e4b2e08f468d2f059cc9ce8dae9e77498a9617541ef1f198fce16132a1af",
+          "receipt": {
+            "schema_version": 1,
+            "conform_id": "conform-weak-flash",
+            "analysis_id": "analysis-weak-flash",
+            "take_id": "weak-flash",
+            "measured_offset_ms": 125,
+            "applied_offset_ms": 125,
+            "applied_samples": 6000
+          }
+        }
+      },
+      "advisory": {
+        "confidence": 0.875,
+        "audio_prominence": 1,
+        "video_prominence": 0.75
+      },
+      "byte_level": {
+        "take_digest": "2bbece9647fcbca0e72d6bb08920af806528ac2efaaf541ac825e3566aa109ad",
+        "audio_digest": "ead6533b79022779c3bb06ef4495385528f4c6d71da518978088766ff0ac69fb",
+        "audio_bytes": 96044,
+        "video_digest": "333e38dadb046b0e2e26424ab43f865e6333fcf5e377bb4ce1c3550fc67f4caf",
+        "video_bytes": 186809,
+        "audio_output_digest": "20d8ef9386b0284abf5113f53ad46fd7a335b6ef1e5c3b01f45af7f21d044e86",
+        "video_output_digest": "333e38dadb046b0e2e26424ab43f865e6333fcf5e377bb4ce1c3550fc67f4caf",
+        "bundle_digest": "90163cd08f6c8b0d31eff31cdc8bdc2e4ed353b09c8b30098e8d48eb334c03e2",
+        "bundle_bytes": 283845,
+        "receipt_audio_digest": "20d8ef9386b0284abf5113f53ad46fd7a335b6ef1e5c3b01f45af7f21d044e86",
+        "receipt_video_digest": "333e38dadb046b0e2e26424ab43f865e6333fcf5e377bb4ce1c3550fc67f4caf",
+        "receipt_input_take_digest": "2bbece9647fcbca0e72d6bb08920af806528ac2efaaf541ac825e3566aa109ad"
+      },
+      "bundle": "golden/bundles/conform-weak-flash.zip"
+    },
+    {
+      "take_id": "silent-flat",
+      "semantic": {
+        "admission_status": 201,
+        "analysis_status": 201,
+        "take": {
+          "state": "admitted",
+          "name": "silence and flat luma",
+          "note": "syncversiongate corpus",
+          "audio": {
+            "sample_rate": 48000,
+            "channels": 1,
+            "bit_depth": 16,
+            "frame_count": 48000,
+            "duration_ms": 1000,
+            "peak_dbfs": -120,
+            "rms_dbfs": -120
+          },
+          "video": {
+            "width": 96,
+            "height": 54,
+            "fps_num": 24,
+            "fps_den": 1,
+            "frame_count": 24,
+            "duration_ms": 1000,
+            "chroma": "C420jpeg"
+          }
+        },
+        "analysis": {
+          "state": "failed",
+          "error_code": "sync_detection_failed",
+          "drift_ppm": 0,
+          "min_confidence": 0.55,
+          "max_offset_ms": 1000
+        },
+        "conform": {
+          "exists": false,
+          "state": "",
+          "error_code": "",
+          "request_status": 409,
+          "request_error_code": "analysis_not_ready",
+          "max_correction_ms": 250,
+          "bundle_available": false
+        }
+      },
+      "advisory": {
+        "confidence": 0,
+        "audio_prominence": 0,
+        "video_prominence": 0
+      },
+      "byte_level": {
+        "take_digest": "dea167c31b470cbac43646fab52e9752e43a8accb3c7b4d46511affc067080e6",
+        "audio_digest": "0a8f76d89c709043814cb74f331a4578d17ff61256303bd0019a263d053f86e8",
+        "audio_bytes": 96044,
+        "video_digest": "f3b4c0329163b57be8e9a0885e1e720361a6a08b1ee567c8d4528bcbdf2aa5ac",
+        "video_bytes": 186809
+      }
+    },
+    {
+      "take_id": "beyond-ceiling",
+      "semantic": {
+        "admission_status": 201,
+        "analysis_status": 201,
+        "take": {
+          "state": "admitted",
+          "name": "audio 417 ms late",
+          "note": "syncversiongate corpus",
+          "audio": {
+            "sample_rate": 48000,
+            "channels": 1,
+            "bit_depth": 16,
+            "frame_count": 48000,
+            "duration_ms": 1000,
+            "peak_dbfs": -8.76,
+            "rms_dbfs": -23.2
+          },
+          "video": {
+            "width": 96,
+            "height": 54,
+            "fps_num": 24,
+            "fps_den": 1,
+            "frame_count": 24,
+            "duration_ms": 1000,
+            "chroma": "C420jpeg"
+          }
+        },
+        "analysis": {
+          "state": "ready",
+          "error_code": "",
+          "audio_event_ms": 500,
+          "video_event_ms": 83,
+          "offset_ms": 417,
+          "drift_ppm": 834,
+          "min_confidence": 0.55,
+          "max_offset_ms": 1000
+        },
+        "conform": {
+          "exists": true,
+          "state": "failed",
+          "error_code": "correction_limit_exceeded",
+          "request_status": 422,
+          "request_error_code": "correction_limit_exceeded",
+          "max_correction_ms": 250,
+          "measured_offset_ms": 417,
+          "applied_offset_ms": 0,
+          "applied_samples": 0,
+          "bundle_available": false
+        }
+      },
+      "advisory": {
+        "confidence": 1,
+        "audio_prominence": 1,
+        "video_prominence": 1
+      },
+      "byte_level": {
+        "take_digest": "e3ca2a0a633fea36cd6b0fd04aee89ac01c62d65442bcef71859b0769e99a923",
+        "audio_digest": "ead6533b79022779c3bb06ef4495385528f4c6d71da518978088766ff0ac69fb",
+        "audio_bytes": 96044,
+        "video_digest": "1feb56d627994a3ef04eb34204dfaa85041ce802521787f0973a86f270955ac0",
+        "video_bytes": 186809
+      }
+    }
+  ]
+}

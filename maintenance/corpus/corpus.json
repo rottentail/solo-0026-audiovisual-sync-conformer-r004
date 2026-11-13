@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "takes": [
+    {
+      "take_id": "calibration-125",
+      "name": "calibration pair, audio 125 ms late",
+      "note": "syncversiongate corpus",
+      "purpose": "production anchor: the same pair the workflow checks use, offset +125 ms",
+      "audio": "inputs/calibration-125.wav",
+      "video": "inputs/calibration-125.y4m",
+      "min_confidence": 0.55,
+      "max_offset_ms": 1000,
+      "max_correction_ms": 250
+    },
+    {
+      "take_id": "negative-drift",
+      "name": "audio 80 ms early",
+      "note": "syncversiongate corpus",
+      "purpose": "negative offset: audio is moved later by the conform",
+      "audio": "inputs/negative-drift.wav",
+      "video": "inputs/negative-drift.y4m",
+      "min_confidence": 0.55,
+      "max_offset_ms": 1000,
+      "max_correction_ms": 250
+    },
+    {
+      "take_id": "stereo-44k1",
+      "name": "stereo 44.1 kHz, audio 117 ms late",
+      "note": "syncversiongate corpus",
+      "purpose": "two channels and a non-48k rate: 117 ms rounds to 5160 sample frames",
+      "audio": "inputs/stereo-44k1.wav",
+      "video": "inputs/stereo-44k1.y4m",
+      "min_confidence": 0.55,
+      "max_offset_ms": 1000,
+      "max_correction_ms": 250
+    },
+    {
+      "take_id": "ramp-flash",
+      "name": "two-frame luma ramp, audio 75 ms late",
+      "note": "syncversiongate corpus",
+      "purpose": "flash rises over frames 9-10: exposes which frame a detector calls the event",
+      "audio": "inputs/ramp-flash.wav",
+      "video": "inputs/ramp-flash.y4m",
+      "min_confidence": 0.55,
+      "max_offset_ms": 1000,
+      "max_correction_ms": 250
+    },
+    {
+      "take_id": "weak-flash",
+      "name": "low contrast flash, audio 125 ms late",
+      "note": "syncversiongate corpus",
+      "purpose": "delta 60 luma: confidence 0.875 sits near policy, exposes prominence drift",
+      "audio": "inputs/weak-flash.wav",
+      "video": "inputs/weak-flash.y4m",
+      "min_confidence": 0.55,
+      "max_offset_ms": 1000,
+      "max_correction_ms": 250
+    },
+    {
+      "take_id": "silent-flat",
+      "name": "silence and flat luma",
+      "note": "syncversiongate corpus",
+      "purpose": "no events: analysis must fail with sync_detection_failed, conform must be refused",
+      "audio": "inputs/silent-flat.wav",
+      "video": "inputs/silent-flat.y4m",
+      "min_confidence": 0.55,
+      "max_offset_ms": 1000,
+      "max_correction_ms": 250
+    },
+    {
+      "take_id": "beyond-ceiling",
+      "name": "audio 417 ms late",
+      "note": "syncversiongate corpus",
+      "purpose": "offset 417 ms exceeds the 250 ms ceiling: conform must fail with correction_limit_exceeded",
+      "audio": "inputs/beyond-ceiling.wav",
+      "video": "inputs/beyond-ceiling.y4m",
+      "min_confidence": 0.55,
+      "max_offset_ms": 1000,
+      "max_correction_ms": 250
+    }
+  ]
+}

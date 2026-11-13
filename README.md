@@ -175,6 +175,23 @@ calibration pair through the production media package, completes the named
 workflow, and verifies persisted state or artifact bytes. The temporary data
 root is removed when the process exits.
 
+## Version maintenance
+
+Delivery records (take descriptors, sync readings, and conform receipts) are
+durable: a candidate build is not admitted because the service starts, and
+not rejected because some output bytes differ. `cmd/syncversiongate` replays
+the committed corpus in `maintenance/corpus/` and compares the candidate's
+records against the golden records at semantic, advisory, and byte levels,
+including re-measuring historical bundles with the candidate detector:
+
+```bash
+go run ./cmd/syncversiongate verify
+```
+
+Exit codes: `0` admit, `2` admit with sign-off, `1` reject. The admission
+method, release trade-offs, and the admission log live in
+[`maintenance/README.md`](maintenance/README.md).
+
 ## Media boundaries
 
 The baseline accepts one PCM WAV stream and one C420 Y4M stream per take.
